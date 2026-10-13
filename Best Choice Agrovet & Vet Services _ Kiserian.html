@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Best Choice Agrovet & Vet Services | Kiserian</title>
+<style>
+:root{--ink:#10321f;--mut:#4b6355;--bg:#f6faf3;--card:#fff;--g1:#0f8a4b;--g2:#7bc043;--g3:#f5a623;--g4:#0e6e7e;--line:#dbe8d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8f4e8;--mut:#a9c2b0;--bg:#0c1a12;--card:#13271b;--line:#24402f}}
+:root[data-theme="dark"]{--ink:#e8f4e8;--mut:#a9c2b0;--bg:#0c1a12;--card:#13271b;--line:#24402f}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:linear-gradient(90deg,var(--g1),var(--g4));color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+nav b{font-size:1.05rem}
+nav div a{margin-left:14px;text-decoration:none;font-size:.92rem;opacity:.95}
+nav div a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#0f8a4b 0%,#0e6e7e 55%,#f5a623 130%);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:30px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;margin:0 0 14px}
+.hero p{font-size:1.1rem;max-width:520px;margin:0 0 22px}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;font-weight:700;text-decoration:none;margin:0 10px 10px 0}
+.wa{background:linear-gradient(135deg,#25d366,#128c7e);color:#fff}
+.em{background:linear-gradient(135deg,#ffd166,#f5a623);color:#3a2600}
+.ghost{border:2px solid #fff;color:#fff}
+.hero svg{width:100%;height:auto;display:block}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:20px;font-size:.85rem}
+section{padding:58px 0}
+h2{font-family:Georgia,serif;font-size:clamp(1.6rem,3.5vw,2.3rem);margin:0 0 8px}
+h2.bar::after{content:"";display:block;width:70px;height:5px;border-radius:5px;margin-top:8px;background:linear-gradient(90deg,var(--g1),var(--g3))}
+.lead{color:var(--mut);max-width:720px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0;overflow:hidden;display:flex;flex-direction:column}
+.card .top{height:92px;display:flex;align-items:center;justify-content:center;font-size:2.8rem}
+.card .body{padding:16px 18px 18px}
+.card h3{margin:0 0 6px;font-size:1.08rem}
+.card p{margin:0;color:var(--mut);font-size:.93rem}
+.c1 .top{background:linear-gradient(135deg,#0f8a4b,#7bc043)}
+.c2 .top{background:linear-gradient(135deg,#0e6e7e,#4cc9b0)}
+.c3 .top{background:linear-gradient(135deg,#f5a623,#f76b1c)}
+.c4 .top{background:linear-gradient(135deg,#7b4fd1,#e0559a)}
+.c5 .top{background:linear-gradient(135deg,#2a7de1,#4cc9f0)}
+.alt{background:linear-gradient(180deg,#e6f4dd,#d4eee9)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .alt{background:linear-gradient(180deg,#112a1c,#0f2a2e)}}
+:root[data-theme="dark"] .alt{background:linear-gradient(180deg,#112a1c,#0f2a2e)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.panel{border-radius:20px;padding:24px;color:#fff}
+.panel h3{margin:0 0 10px;font-size:1.25rem}
+.panel ul{margin:0;padding-left:20px}
+.panel li{margin:4px 0}
+.p1{background:linear-gradient(135deg,#0f8a4b,#0e6e7e)}
+.p2{background:linear-gradient(135deg,#f5a623,#d9531e)}
+.p3{background:linear-gradient(135deg,#7bc043,#0f8a4b)}
+.p4{background:linear-gradient(135deg,#0e6e7e,#2a5bd7)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;counter-increment:s}
+.step::before{content:counter(s);display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g3));color:#fff;font-weight:700;margin-bottom:8px}
+.step h3{margin:0 0 4px;font-size:1rem}.step p{margin:0;color:var(--mut);font-size:.92rem}
+.note{background:linear-gradient(90deg,#fff4d6,#ffe3b3);color:#4a3200;border-radius:14px;padding:14px 18px;margin-top:22px;font-size:.93rem}
+.contact{background:linear-gradient(135deg,#0e6e7e,#0f8a4b 60%,#7bc043);color:#fff;text-align:center}
+.contact p{max-width:600px;margin:0 auto 22px}
+.info{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:20px}
+.info div{background:rgba(255,255,255,.16);border-radius:14px;padding:12px 20px}
+.fcard{background:var(--card);color:var(--ink);border-radius:20px;max-width:640px;margin:26px auto 0;padding:24px;text-align:left;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.fcard h3{margin:0 0 4px;font-size:1.25rem}.fcard .sub{margin:0 0 16px;color:var(--mut);font-size:.92rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fcard label{display:block;font-size:.85rem;font-weight:700;margin:10px 0 4px}
+.fcard input,.fcard select,.fcard textarea{width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}
+.fcard textarea{min-height:100px;resize:vertical}
+.send{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.send button{flex:1 1 200px;border:0;cursor:pointer;padding:13px 18px;border-radius:30px;font:inherit;font-weight:700}
+.send .wa{color:#fff}.send .em{color:#3a2600}
+#fmsg{margin:12px 0 0;font-size:.9rem;color:var(--mut);min-height:1.2em}
+@media (max-width:560px){.row{grid-template-columns:1fr}}
+.hero .wrap{padding-bottom:80px}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:46px;display:block}
+nav{backdrop-filter:blur(8px)}
+.card{transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(15,138,75,.22)}
+.card .top{background-size:cover;position:relative}
+.card .top::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.35),transparent 55%)}
+.animals{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.an{border-radius:24px;padding:18px 12px 16px;text-align:center;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.an svg{width:96px;height:96px;background:rgba(255,255,255,.88);border-radius:50%;padding:8px;display:block;margin:0 auto 10px}
+.an b{display:block;font-size:.98rem}.an span{font-size:.8rem;opacity:.92}
+.a1{background:linear-gradient(145deg,#0f8a4b,#7bc043)}.a2{background:linear-gradient(145deg,#0e6e7e,#4cc9b0)}.a3{background:linear-gradient(145deg,#f5a623,#f76b1c)}.a4{background:linear-gradient(145deg,#7b4fd1,#e0559a)}.a5{background:linear-gradient(145deg,#2a7de1,#4cc9f0)}.a6{background:linear-gradient(145deg,#d9531e,#f5a623)}.a7{background:linear-gradient(145deg,#0b5d3a,#2fa35b)}.a8{background:linear-gradient(145deg,#e0559a,#f5a623)}.a9{background:linear-gradient(145deg,#8a4b22,#f5a623)}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:6px}
+.why div{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--g3);border-radius:14px;padding:14px 16px}
+.why b{display:block}.why span{color:var(--mut);font-size:.9rem}
+.animals{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:22px}
+.an{position:relative;overflow:hidden;border-radius:110px 110px 26px 26px;padding:26px 12px 20px;transition:transform .25s}
+.an::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.14);right:-50px;bottom:-60px}
+.an svg{width:108px;height:108px;border:4px solid rgba(255,255,255,.65);box-shadow:0 8px 18px rgba(0,0,0,.18);transition:transform .25s}
+.an:hover{transform:translateY(-6px)}.an:hover svg{transform:scale(1.07) rotate(-4deg)}
+.an b{font-size:1.05rem;position:relative}.an span{position:relative;display:block;margin-top:2px}
+#services .card{border:0;border-radius:22px;box-shadow:0 6px 20px rgba(16,50,31,.12)}
+#services .card .top{height:96px;justify-content:flex-start;padding:0 22px;font-size:2.4rem;text-shadow:0 3px 8px rgba(0,0,0,.25)}
+#services .card .top::before{content:"";position:absolute;right:-24px;top:-34px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.18)}
+#services .card .body{padding:16px 20px 18px;flex:1;display:flex;flex-direction:column}
+#services .card h3{font-size:1.12rem}
+.ask{margin-top:auto;padding-top:12px;font-weight:700;font-size:.88rem;color:var(--g1);text-decoration:none}
+.ask:hover{text-decoration:underline}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ask{color:var(--g2)}}
+:root[data-theme="dark"] .ask{color:var(--g2)}
+.wgt{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.wbtn{display:flex;align-items:center;gap:8px;border:0;cursor:pointer;color:#fff;font:inherit;font-weight:700;padding:12px 18px 12px 14px;border-radius:40px;background:linear-gradient(135deg,#25d366,#0e8f6a);box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulse 2.4s infinite}
+.wbtn svg{width:28px;height:28px;fill:#fff}
+.wpanel{width:290px;max-width:calc(100vw - 32px);background:var(--card);color:var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.wpanel[hidden]{display:none}
+.wh{background:linear-gradient(135deg,#0e6e7e,#25d366);color:#fff;padding:14px 16px}
+.wh b{display:block}.wh span{font-size:.85rem;opacity:.95}
+.wb{padding:14px 16px}.wb p{margin:0 0 10px;font-size:.92rem;color:var(--mut)}
+.wb a{display:block;margin-bottom:8px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);text-decoration:none;font-size:.92rem;font-weight:700}
+.wb a:hover{background:linear-gradient(135deg,#e4f9ec,#d4f1ff);color:#10321f}
+@keyframes pulse{0%{box-shadow:0 8px 22px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 8px 22px rgba(0,0,0,.3),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 8px 22px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,0)}}
+@media (prefers-reduced-motion:reduce){.wbtn{animation:none}.an,.an svg,.card{transition:none}}
+@media (max-width:480px){.wbtn span{display:none}.wbtn{padding:12px}}
+.mapbox{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:stretch}
+.mapart{border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(16,50,31,.18);min-height:300px}
+.mapart svg{width:100%;height:100%;display:block}
+.mapinfo{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.mapinfo h3{margin:0;font-size:1.25rem}.mapinfo p{margin:0;color:var(--mut)}
+.mapinfo .btn{margin:0;text-align:center}
+.mapbtn{background:linear-gradient(135deg,#0f8a4b,#0e6e7e);color:#fff}
+.mapbtn2{background:linear-gradient(135deg,#ffd166,#f5a623);color:#3a2600}
+@media (max-width:760px){.mapbox{grid-template-columns:1fr}}
+footer{background:#0a2616;color:#b9d3c0;text-align:center;padding:22px 20px;font-size:.88rem}
+:focus-visible{outline:3px solid var(--g3);outline-offset:2px}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}nav div a{margin:0 10px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+    <div class="wrap"><b>🐄 Best Choice Agrovet & Vet Services</b>
+        <div>
+            <a href="#services">Vet services</a>
+            <a href="#shop">Shop</a>
+            <a href="#how">How we work</a>
+            <a href="#map">Find us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Healthy animals. Stronger farms. Right here in Kiserian.</h1>
+<p>Complete veterinary care and a fully stocked agrovet for dairy and beef farmers, poultry keepers, pig and rabbit farmers, goat and sheep keepers, and pet owners across Kiserian and Kajiado County.</p>
+<a class="btn wa" href="https://wa.me/254703117912?text=Hello%20Best%20Choice%20Agrovet%2C%20I%20need%20help%20with%20my%20animals">Chat on WhatsApp</a>
+<a class="btn em" href="mailto:info@bestchoiceagrovet.co.ke">Send an email</a>
+<a class="btn ghost" href="#services">See our services</a>
+<div class="tags"><span>Farm visits</span><span>Vaccination</span><span>Drugs & feeds</span><span>Free advice</span></div>
+</div>
+<svg viewBox="0 0 400 300" role="img" aria-label="Illustration of a cow, hens and a farm in green hills">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe29a"/><stop offset="1" stop-color="#ffb347"/></linearGradient>
+<linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7bc043"/><stop offset="1" stop-color="#0f8a4b"/></linearGradient>
+<linearGradient id="h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2fa35b"/><stop offset="1" stop-color="#0b5d3a"/></linearGradient></defs>
+<rect width="400" height="300" rx="28" fill="url(#sk)"/><circle cx="320" cy="70" r="36" fill="#fff6c9"/>
+<path d="M0 190 Q100 130 200 175 T400 150 V300 H0Z" fill="url(#h1)"/>
+<path d="M0 235 Q120 190 240 225 T400 210 V300 H0Z" fill="url(#h2)"/>
+<g transform="translate(70,150)"><rect x="0" y="20" width="110" height="52" rx="22" fill="#fff"/><circle cx="20" cy="40" r="12" fill="#3b3b3b"/><circle cx="70" cy="50" r="15" fill="#3b3b3b"/><rect x="92" y="8" width="42" height="36" rx="16" fill="#fff"/><ellipse cx="124" cy="36" rx="14" ry="10" fill="#f6b5b5" transform="translate(0,2)"/><circle cx="110" cy="22" r="3" fill="#222"/><path d="M98 8 l-6 -10 M122 8 l6 -10" stroke="#8a5a2b" stroke-width="5" stroke-linecap="round"/><rect x="14" y="68" width="10" height="30" fill="#fff"/><rect x="42" y="68" width="10" height="30" fill="#fff"/><rect x="78" y="68" width="10" height="30" fill="#fff"/><rect x="98" y="68" width="10" height="30" fill="#fff"/></g>
+<g transform="translate(262,205)"><ellipse cx="22" cy="18" rx="22" ry="17" fill="#c9742b"/><circle cx="42" cy="4" r="9" fill="#c9742b"/><path d="M50 3 l9 3 -9 3z" fill="#f5a623"/><path d="M40 -6 q3 -8 6 0" fill="#d62828"/></g>
+<g transform="translate(305,215)"><ellipse cx="18" cy="14" rx="18" ry="14" fill="#f4e3c1"/><circle cx="34" cy="3" r="8" fill="#f4e3c1"/><path d="M41 2 l8 3 -8 3z" fill="#f5a623"/></g>
+<g transform="translate(20,225)"><path d="M0 20 h46 v34 h-46z" fill="#fff"/><path d="M-6 20 l29 -20 29 20z" fill="#d9531e"/><rect x="17" y="34" width="12" height="20" fill="#0e6e7e"/></g>
+</svg>
+</div><svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q300 70 600 30 T1200 30 V60 H0Z" fill="var(--bg)"/></svg></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="cow" viewBox="0 0 100 100"><path d="M22 30Q8 24 6 38Q14 44 24 40ZM78 30Q92 24 94 38Q86 44 76 40Z" fill="#f2f2f2" stroke="#333" stroke-width="2"/><path d="M30 20L24 6M70 20L76 6" stroke="#e0b060" stroke-width="5" stroke-linecap="round"/><rect x="24" y="16" width="52" height="64" rx="24" fill="#fff" stroke="#333" stroke-width="2"/><path d="M26 28Q40 18 52 24Q44 40 28 42Z" fill="#333"/><ellipse cx="50" cy="68" rx="20" ry="14" fill="#f7b6b6"/><circle cx="43" cy="68" r="2.5" fill="#a33"/><circle cx="57" cy="68" r="2.5" fill="#a33"/><circle cx="38" cy="42" r="3.5" fill="#222"/><circle cx="62" cy="42" r="3.5" fill="#222"/></symbol>
+<symbol id="goat" viewBox="0 0 100 100"><path d="M32 22Q20 4 12 12M68 22Q80 4 88 12" stroke="#8a6a3a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M26 36L6 44L28 50ZM74 36L94 44L72 50Z" fill="#d8c4a0"/><path d="M50 12C70 12 74 40 66 66L50 82L34 66C26 40 30 12 50 12Z" fill="#efe3c8" stroke="#8a7350" stroke-width="2"/><path d="M50 82L44 96L56 96Z" fill="#c9b48a"/><ellipse cx="50" cy="66" rx="12" ry="8" fill="#f1c9b4"/><circle cx="40" cy="42" r="3.5" fill="#222"/><circle cx="60" cy="42" r="3.5" fill="#222"/></symbol>
+<symbol id="sheep" viewBox="0 0 100 100"><g fill="#f4f4f4" stroke="#bbb" stroke-width="2"><circle cx="28" cy="34" r="15"/><circle cx="50" cy="24" r="16"/><circle cx="72" cy="34" r="15"/><circle cx="24" cy="56" r="14"/><circle cx="76" cy="56" r="14"/></g><ellipse cx="50" cy="56" rx="22" ry="28" fill="#3a3a3a"/><ellipse cx="50" cy="74" rx="10" ry="7" fill="#6b5a5a"/><circle cx="41" cy="52" r="3" fill="#fff"/><circle cx="59" cy="52" r="3" fill="#fff"/></symbol>
+<symbol id="hen" viewBox="0 0 100 100"><path d="M38 14Q42 4 48 14Q54 2 60 14Q66 6 66 18Z" fill="#d62828"/><circle cx="52" cy="34" r="20" fill="#fff" stroke="#c9a56a" stroke-width="2"/><path d="M70 32L90 38L70 44Z" fill="#f5a623"/><path d="M62 46Q70 60 60 62Q54 54 58 46Z" fill="#d62828"/><ellipse cx="46" cy="76" rx="32" ry="20" fill="#e8c58a"/><path d="M22 72Q36 60 52 74Q38 86 22 72Z" fill="#c9742b"/><circle cx="58" cy="30" r="3.5" fill="#222"/></symbol>
+<symbol id="pig" viewBox="0 0 100 100"><path d="M20 28L10 10L38 20ZM80 28L90 10L62 20Z" fill="#f29bb0"/><circle cx="50" cy="52" r="36" fill="#f7b5c4" stroke="#d98096" stroke-width="2"/><ellipse cx="50" cy="62" rx="18" ry="13" fill="#f29bb0"/><circle cx="43" cy="62" r="3.2" fill="#a64d66"/><circle cx="57" cy="62" r="3.2" fill="#a64d66"/><circle cx="36" cy="42" r="4" fill="#222"/><circle cx="64" cy="42" r="4" fill="#222"/></symbol>
+<symbol id="rabbit" viewBox="0 0 100 100"><ellipse cx="36" cy="26" rx="9" ry="24" fill="#efe6dc" stroke="#b8a999" stroke-width="2"/><ellipse cx="64" cy="26" rx="9" ry="24" fill="#efe6dc" stroke="#b8a999" stroke-width="2"/><ellipse cx="36" cy="28" rx="4" ry="16" fill="#f7b6c2"/><ellipse cx="64" cy="28" rx="4" ry="16" fill="#f7b6c2"/><circle cx="50" cy="64" r="28" fill="#f6efe7" stroke="#b8a999" stroke-width="2"/><circle cx="40" cy="58" r="3.5" fill="#222"/><circle cx="60" cy="58" r="3.5" fill="#222"/><path d="M45 68L55 68L50 74Z" fill="#e58aa0"/></symbol>
+<symbol id="dog" viewBox="0 0 100 100"><path d="M26 22Q6 24 10 62Q26 64 34 40ZM74 22Q94 24 90 62Q74 64 66 40Z" fill="#7a4a22"/><rect x="26" y="14" width="48" height="66" rx="24" fill="#d9a066" stroke="#a8723a" stroke-width="2"/><ellipse cx="50" cy="66" rx="18" ry="13" fill="#f3dcc0"/><ellipse cx="50" cy="60" rx="7" ry="5" fill="#222"/><circle cx="39" cy="42" r="4" fill="#222"/><circle cx="61" cy="42" r="4" fill="#222"/><path d="M50 66V72M44 74Q50 80 56 74" stroke="#222" stroke-width="2" fill="none"/></symbol>
+<symbol id="cat" viewBox="0 0 100 100"><path d="M22 44L20 10L46 26ZM78 44L80 10L54 26Z" fill="#e89a4a" stroke="#b8692a" stroke-width="2"/><circle cx="50" cy="56" r="34" fill="#f2a95a" stroke="#b8692a" stroke-width="2"/><path d="M36 26L38 38M50 22V36M64 26L62 38" stroke="#b8692a" stroke-width="3" stroke-linecap="round"/><ellipse cx="39" cy="54" rx="4" ry="5.5" fill="#222"/><ellipse cx="61" cy="54" rx="4" ry="5.5" fill="#222"/><path d="M46 66L54 66L50 71Z" fill="#e0707f"/><path d="M14 62L32 66M14 72L32 70M86 62L68 66M86 72L68 70" stroke="#fff" stroke-width="1.6"/></symbol>
+<symbol id="horse" viewBox="0 0 100 100"><path d="M30 28L26 8L42 20ZM70 28L74 8L58 20Z" fill="#8a4b22"/><path d="M36 14Q50 6 64 14L66 30L34 30Z" fill="#5a2e12"/><path d="M32 22Q50 12 68 22Q72 50 64 78Q50 96 36 78Q28 50 32 22Z" fill="#a85a2a" stroke="#6b3516" stroke-width="2"/><path d="M50 18V50" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".9"/><ellipse cx="50" cy="78" rx="14" ry="11" fill="#d9a073"/><circle cx="44" cy="78" r="2.6" fill="#4a2410"/><circle cx="56" cy="78" r="2.6" fill="#4a2410"/><circle cx="38" cy="44" r="3.6" fill="#222"/><circle cx="62" cy="44" r="3.6" fill="#222"/></symbol>
+</defs></svg>
+<section><div class="wrap">
+<h2 class="bar">Animals we care for</h2>
+<p class="lead">From the family dairy cow to the backyard hen and the household pet, we treat and supply for the domestic animals Kiserian families keep.</p>
+<div class="animals">
+<div class="an a1"><svg viewBox="0 0 100 100"><use href="#cow"/></svg><b>Dairy & beef cattle</b><span>Milk, fertility, calves</span></div>
+<div class="an a2"><svg viewBox="0 0 100 100"><use href="#goat"/></svg><b>Goats</b><span>Dairy and meat goats</span></div>
+<div class="an a3"><svg viewBox="0 0 100 100"><use href="#sheep"/></svg><b>Sheep</b><span>Wool and meat breeds</span></div>
+<div class="an a4"><svg viewBox="0 0 100 100"><use href="#hen"/></svg><b>Chickens</b><span>Layers, broilers, kienyeji</span></div>
+<div class="an a5"><svg viewBox="0 0 100 100"><use href="#pig"/></svg><b>Pigs</b><span>Weaners to sows</span></div>
+<div class="an a6"><svg viewBox="0 0 100 100"><use href="#rabbit"/></svg><b>Rabbits</b><span>Meat and breeding</span></div>
+<div class="an a7"><svg viewBox="0 0 100 100"><use href="#dog"/></svg><b>Dogs</b><span>Vaccines, food, care</span></div>
+<div class="an a8"><svg viewBox="0 0 100 100"><use href="#cat"/></svg><b>Cats</b><span>Wellness and parasites</span></div>
+<div class="an a9"><svg viewBox="0 0 100 100"><use href="#horse"/></svg><b>Horses & donkeys</b><span>Health checks, feed, care</span></div>
+</div>
+<div class="why"><div><b>Advice first</b><span>Send a photo or video and we guide you before you travel.</span></div><div><b>We come to you</b><span>On-farm visits around Kiserian and Kajiado County.</span></div><div><b>Everything in one place</b><span>Treatment, drugs, feeds and salts under one roof.</span></div><div><b>Follow-up included</b><span>Reminders for your next vaccine, deworming and dip.</span></div></div>
+</div></section>
+<section id="services"><div class="wrap">
+<h2 class="bar">Veterinary services</h2>
+<p class="lead">Non-surgical clinical care and preventive health programs for domestic animals, at our shop or on your farm. Tell us the species and the problem, and we will advise on the best next step.</p>
+<div class="grid">
+<div class="card c1"><div class="top">💉</div><div class="body"><h3>Vaccination programs</h3><p>Cattle (FMD, anthrax, blackleg, LSD, brucellosis), sheep and goats (PPR, pox, CCPP, enterotoxaemia), poultry (Newcastle, Gumboro, fowl pox, Marek's, fowl typhoid), pigs, and rabies plus core shots for dogs and cats.</p></div></div>
+<div class="card c2"><div class="top">🐛</div><div class="body"><h3>Deworming & parasite control</h3><p>Roundworms, tapeworms, liver fluke and lungworm treatment with a schedule matched to your pasture and species, including dogs, cats and puppies.</p></div></div>
+<div class="card c3"><div class="top">🕷️</div><div class="body"><h3>Tick, mite & lice control</h3><p>Spray and dip advice, pour-ons and injectables for ticks and tick-borne diseases (East Coast fever, anaplasmosis, babesiosis, heartwater), plus mange and lice treatment.</p></div></div>
+<div class="card c4"><div class="top">🩺</div><div class="body"><h3>Diagnosis & treatment of illness</h3><p>Clinical examination and medical treatment for fever, diarrhoea, pneumonia, bloat, milk fever, ketosis, wounds, skin disease, eye and ear infections, and poisoning.</p></div></div>
+<div class="card c5"><div class="top">🔬</div><div class="body"><h3>Lab & field testing</h3><p>Faecal egg counts, blood smears for tick-borne disease, skin scrapings, California Mastitis Test, and rapid tests, with referral to partner labs for advanced tests.</p></div></div>
+<div class="card c1"><div class="top">🥛</div><div class="body"><h3>Mastitis & dairy herd health</h3><p>Udder health checks, mastitis treatment, dry cow therapy, teat dips, milking hygiene coaching and milk quality improvement.</p></div></div>
+<div class="card c2"><div class="top">🐮</div><div class="body"><h3>Breeding & artificial insemination</h3><p>Heat detection advice, AI with quality semen, pregnancy diagnosis, fertility problem management and calving-interval improvement.</p></div></div>
+<div class="card c3"><div class="top">🍼</div><div class="body"><h3>Calf, kid & lamb care</h3><p>Colostrum guidance, scours and navel care, early vaccination, weaning plans and growth monitoring.</p></div></div>
+<div class="card c4"><div class="top">🐔</div><div class="body"><h3>Poultry health</h3><p>Flock health checks, disease outbreak response (coccidiosis, CRD, Newcastle, fowl cholera), vaccination calendars, brooding setup and biosecurity for layers, broilers and kienyeji.</p></div></div>
+<div class="card c5"><div class="top">🐖</div><div class="body"><h3>Pig, rabbit & small stock</h3><p>Health plans for pigs, rabbits, goats and sheep, including mange, scours, respiratory disease, mineral deficiency and ration advice.</p></div></div>
+<div class="card c1"><div class="top">🐕</div><div class="body"><h3>Pets: dogs & cats</h3><p>Wellness checks, puppy and kitten vaccination, rabies jabs, flea and tick control, skin problems, nutrition and basic first aid.</p></div></div>
+<div class="card c4"><div class="top">🐴</div><div class="body"><h3>Horse & donkey care</h3><p>Wellness checks, vaccination advice, deworming, first-line treatment for colic, wounds, skin and hoof problems, plus feeding and body condition guidance.</p></div></div>
+<div class="card c2"><div class="top">🌾</div><div class="body"><h3>Nutrition & ration formulation</h3><p>Body condition scoring, dairy and beef rations, silage and hay advice, mineral supplementation and feed cost reduction.</p></div></div>
+<div class="card c3"><div class="top">🚜</div><div class="body"><h3>On-farm visits & emergencies</h3><p>Routine herd visits and urgent calls for sick animals, difficult-to-treat cases and calving support without surgery. Serious cases are referred to a surgical partner clinic.</p></div></div>
+<div class="card c4"><div class="top">🛡️</div><div class="body"><h3>Herd health plans & biosecurity</h3><p>Yearly calendars for vaccines, dewormers and dips, record keeping, quarantine rules and disease prevention for your whole enterprise.</p></div></div>
+<div class="card c5"><div class="top">🎓</div><div class="body"><h3>Farmer training & advice</h3><p>Practical sessions on dairy management, poultry keeping, drug withdrawal periods, safe drug use and animal welfare. Available for groups and cooperatives.</p></div></div>
+<div class="card c1"><div class="top">📋</div><div class="body"><h3>Health certificates & movement advice</h3><p>Guidance on veterinary documents, vaccination records and livestock movement requirements in Kenya.</p></div></div>
+</div>
+<div class="note"><b>Note:</b> We do not offer surgical procedures. Cases that need an operation are referred to a trusted partner clinic.</div>
+</div></section>
+
+<section id="shop" class="alt"><div class="wrap">
+<h2 class="bar">Agrovet shop</h2>
+<p class="lead">Quality, licensed products with honest advice on dosage, withdrawal periods and value for money. Ask for current stock and prices on WhatsApp.</p>
+<div class="split">
+<div class="panel p1"><h3>💊 Animal drugs</h3><ul><li>Antibiotics (oxytetracycline, penicillin-streptomycin, sulfa drugs)</li><li>Dewormers (albendazole, levamisole, ivermectin, praziquantel)</li><li>Acaricides: sprays, dips and pour-ons</li><li>Anti-inflammatories, pain and fever relief</li><li>Anti-protozoals and coccidiostats</li><li>Mastitis tubes and teat dips</li><li>Wound sprays, antiseptics, eye ointments</li><li>Vitamins, tonics and electrolytes</li><li>Hormones and fertility products (on prescription)</li></ul></div>
+<div class="panel p2"><h3>🐔 Chicken feeds</h3><ul><li>Chick mash and starter</li><li>Growers mash</li><li>Layers mash and pellets</li><li>Broiler starter, grower and finisher</li><li>Kienyeji and indigenous chicken feed</li><li>Duck, turkey and quail feed</li><li>Poultry vitamins, grit and shell</li><li>Day-old chicks (on order)</li></ul></div>
+<div class="panel p3"><h3>🐄 Animal feeds & salts</h3><ul><li>Dairy meal and high-yield cow concentrates</li><li>Calf pellets, milk replacer and calf starter</li><li>Pig feeds: creep, weaner, grower, sow and boar</li><li>Rabbit pellets and goat/sheep supplements</li><li>Dog and cat food</li><li>Horse feed, hay and supplements</li><li>Mineral lick salt, block salt and rock salt</li><li>Dairy and beef mineral premixes</li><li>Maize germ, wheat bran, cotton seed cake, soya meal, molasses</li></ul></div>
+<div class="panel p4"><h3>🧰 Farm supplies</h3><ul><li>Syringes, needles and drenching guns</li><li>Feeders, drinkers and brooder lamps</li><li>Milking jelly, buckets and strainers</li><li>Spray pumps and protective gear</li><li>Ear tags, hoof trimming tools and collars</li><li>Disinfectants and footbath chemicals</li><li>Hay, silage additives and pasture seeds</li></ul></div>
+</div></div></section>
+
+<section id="how"><div class="wrap">
+<h2 class="bar">How we work with you</h2>
+<p class="lead">Simple, quick and practical.</p>
+<div class="steps">
+<div class="step"><h3>Message us</h3><p>Send the species, number of animals, symptoms and a photo or short video on WhatsApp.</p></div>
+<div class="step"><h3>Get advice</h3><p>We assess the problem and tell you whether to visit the shop, book a farm visit or treat at home.</p></div>
+<div class="step"><h3>Treatment & products</h3><p>We treat, vaccinate or prescribe, and supply the right drugs and feed.</p></div>
+<div class="step"><h3>Follow up</h3><p>We check recovery and set your next vaccination, deworming and dipping dates.</p></div>
+</div></div></section>
+
+<section id="map" class="alt"><div class="wrap">
+<h2 class="bar">Find us in Kiserian</h2>
+<p class="lead">Visit the shop for drugs, feeds, salts and advice, or ask us to come to your farm.</p>
+<div class="mapbox">
+<div class="mapart"><svg viewBox="0 0 600 380" role="img" aria-label="Map sketch showing Best Choice Agrovet in Kiserian on Magadi Road" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6f4dd"/><stop offset="1" stop-color="#cfeee6"/></linearGradient></defs>
+<rect width="600" height="380" fill="url(#mg)"/>
+<path d="M0 300Q150 250 260 300T600 270V380H0Z" fill="#bfe3b0"/><path d="M420 0Q470 90 430 170T500 380H600V0Z" fill="#b9e3ef" opacity=".7"/>
+<g fill="none" stroke-linecap="round"><path d="M-10 120L610 250" stroke="#fff" stroke-width="22"/><path d="M-10 120L610 250" stroke="#f5a623" stroke-width="4" stroke-dasharray="14 10"/><path d="M200 -10L330 390" stroke="#fff" stroke-width="12"/><path d="M60 330L300 200" stroke="#fff" stroke-width="9"/><path d="M330 150L560 60" stroke="#fff" stroke-width="9"/></g>
+<g fill="#fff" opacity=".85"><rect x="230" y="80" width="34" height="26" rx="4"/><rect x="360" y="205" width="40" height="28" rx="4"/><rect x="140" y="215" width="30" height="24" rx="4"/><rect x="400" y="110" width="34" height="24" rx="4"/></g>
+<g font-family="Trebuchet MS,Segoe UI,sans-serif" font-size="14" fill="#0b5d3a" font-weight="700"><text x="24" y="100">Towards Ngong</text><text x="430" y="290">Magadi Road</text><text x="352" y="60">Kiserian town</text></g>
+<g transform="translate(285,178)"><ellipse cx="0" cy="34" rx="16" ry="5" fill="rgba(0,0,0,.25)"/><path d="M0 34C-26 4 -26 -26 0 -26C26 -26 26 4 0 34Z" fill="#d9531e"/><circle cx="0" cy="-8" r="11" fill="#fff"/><text x="0" y="-3" text-anchor="middle" font-size="13">🐄</text></g>
+<g font-family="Trebuchet MS,Segoe UI,sans-serif"><rect x="212" y="220" width="146" height="30" rx="15" fill="#0f8a4b"/><text x="285" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Best Choice Agrovet</text></g>
+</svg></div>
+<div class="mapinfo"><h3>Best Choice Agrovet & Vet Services</h3><p>📍 Kiserian, Kajiado County, Kenya</p><p>Not sure how to reach us? Open the map for directions, or send us a WhatsApp message and we will guide you.</p>
+<a class="btn mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Best+Choice+Agrovet+Kiserian+Kenya">Open in Google Maps</a>
+<a class="btn mapbtn2" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Best+Choice+Agrovet+Kiserian+Kenya">Get directions</a>
+<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/254703117912?text=Hello%2C%20please%20share%20your%20location%20in%20Kiserian">Ask for our location on WhatsApp</a></div>
+</div></div></section>
+<section id="contact" class="contact"><div class="wrap">
+<h2>Talk to Best Choice Agrovet today</h2>
+<p>Sick animal, vaccination due, or running low on feed? Reach us on WhatsApp or email and we will respond as soon as we can.</p>
+<a class="btn wa" href="https://wa.me/254703117912?text=Hello%20Best%20Choice%20Agrovet%2C%20I%20need%20help%20with%20my%20animals">WhatsApp us</a>
+<a class="btn em" href="mailto:info@bestchoiceagrovet.co.ke?subject=Enquiry%20for%20Best%20Choice%20Agrovet">Email us</a>
+<form class="fcard" id="cf" novalidate>
+<h3>Send us your request</h3>
+<p class="sub">Fill this in, then choose how to send it. Your details are filled into a ready-to-send WhatsApp message or email.</p>
+<div class="row"><div><label for="fn">Your name *</label><input id="fn" required autocomplete="name"></div>
+<div><label for="fp">Phone number</label><input id="fp" type="tel" autocomplete="tel" placeholder="07xx xxx xxx"></div></div>
+<div class="row"><div><label for="fr">Reason / service *</label>
+<select id="fr" required><option value="">Select a reason or service</option>
+<optgroup label="Veterinary services"><option>Vaccination</option><option>Deworming & parasite control</option><option>Tick, mite & lice control</option><option>Sick animal: diagnosis & treatment</option><option>Lab & field testing</option><option>Mastitis & dairy herd health</option><option>Breeding & artificial insemination</option><option>Calf, kid & lamb care</option><option>Poultry health</option><option>Pig, rabbit & small stock</option><option>Pet care (dogs & cats)</option><option>Horse & donkey care</option><option>Nutrition & ration formulation</option><option>On-farm visit</option><option>Emergency call</option><option>Herd health plan & biosecurity</option><option>Farmer training</option><option>Health certificate & movement advice</option></optgroup>
+<optgroup label="Agrovet shop"><option>Buy animal drugs</option><option>Buy chicken feeds</option><option>Buy animal feeds</option><option>Buy salts & minerals</option><option>Buy farm supplies & equipment</option><option>Price list / stock enquiry</option></optgroup>
+<optgroup label="Other"><option>Other enquiry</option></optgroup></select></div>
+<div><label for="fa">Animal type</label><select id="fa"><option value="">Select (optional)</option><option>Dairy cattle</option><option>Beef cattle</option><option>Goats</option><option>Sheep</option><option>Chickens</option><option>Pigs</option><option>Rabbits</option><option>Dog</option><option>Cat</option><option>Horse</option><option>Donkey</option><option>Other</option></select></div></div>
+<label for="fl">Location</label><input id="fl" placeholder="e.g. Kiserian town, Olooloitikosh">
+<label for="fm">Message</label><textarea id="fm" placeholder="Number of animals, symptoms, products needed, preferred date..."></textarea>
+<div class="send"><button type="button" class="wa" id="sw">Send via WhatsApp</button><button type="button" class="em" id="se">Send via Email</button></div>
+<p id="fmsg" role="status"></p>
+</form>
+<div class="info"><div>📍 Kiserian, Kajiado County</div><div>📞 +254 703 117 912</div><div>✉️ info@bestchoiceagrovet.co.ke</div></div>
+</div></section>
+
+<div class="wgt"><div class="wpanel" id="wpanel" hidden><div class="wh"><b>Best Choice Agrovet & Vet Services</b><span>Chat with us on WhatsApp</span></div><div class="wb"><p>Hello! What do you need help with?</p>
+<a data-t="Hello, I have a sick animal and need help." target="_blank" rel="noopener">🩺 My animal is sick</a>
+<a data-t="Hello, I would like to book a vaccination or deworming." target="_blank" rel="noopener">💉 Vaccination or deworming</a>
+<a data-t="Hello, I would like to ask about animal drugs and their prices." target="_blank" rel="noopener">💊 Animal drugs</a>
+<a data-t="Hello, I would like to ask about feeds, chicken feeds and salts." target="_blank" rel="noopener">🌾 Feeds, chicken feeds & salts</a>
+<a data-t="Hello, I would like to book a farm visit." target="_blank" rel="noopener">🚜 Book a farm visit</a></div></div>
+<button type="button" class="wbtn" id="wbtn" aria-expanded="false" aria-controls="wpanel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.800.8 2.500.8 3.400.7.5-.1 1.700-.7 1.900-1.400.2-.7.2-1.200.2-1.400-.1-.1-.3-.2-.5-.3z"/></svg><span>Chat with us</span></button></div>
+<footer>© <span id="y">2026</span> Best Choice Agrovet & Vet Services, Kiserian, Kenya. Always follow label directions and withdrawal periods.</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){
+var WA='254703117912',MAIL='info@bestchoiceagrovet.co.ke';
+var $=function(i){return document.getElementById(i)};
+function build(){
+var n=$('fn').value.trim(),r=$('fr').value;
+if(!n||!r){$('fmsg').textContent='Please enter your name and choose a reason or service.';(n?$('fr'):$('fn')).focus();return null}
+var L=['Hello Best Choice Agrovet & Vet Services,','','Name: '+n,'Reason / service: '+r];
+if($('fp').value.trim())L.push('Phone: '+$('fp').value.trim());
+if($('fa').value)L.push('Animal: '+$('fa').value);
+if($('fl').value.trim())L.push('Location: '+$('fl').value.trim());
+if($('fm').value.trim())L.push('','Message: '+$('fm').value.trim());
+return{subject:'Enquiry: '+r+' ('+n+')',body:L.join('\n')}}
+$('sw').onclick=function(){var m=build();if(!m)return;
+$('fmsg').textContent='Opening WhatsApp with your message ready to send...';
+window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(m.body),'_blank','noopener')};
+$('se').onclick=function(){var m=build();if(!m)return;
+$('fmsg').textContent='Opening your email app with the message filled in...';
+window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent(m.subject)+'&body='+encodeURIComponent(m.body)};
+$('cf').addEventListener('submit',function(e){e.preventDefault()});
+var wb=$('wbtn'),wp=$('wpanel');
+wb.onclick=function(){var open=wp.hidden;wp.hidden=!open;wb.setAttribute('aria-expanded',String(open))};
+document.querySelectorAll('#wpanel [data-t]').forEach(function(a){a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(a.getAttribute('data-t'))});
+document.querySelectorAll('#services .card').forEach(function(c){var h=c.querySelector('h3'),b=c.querySelector('.body');if(!h||!b)return;var a=document.createElement('a');a.className='ask';a.target='_blank';a.rel='noopener';a.textContent='Ask about this on WhatsApp';a.href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hello, I would like to ask about: '+h.textContent);b.appendChild(a)});
+})();
+</script>
+</body>
+</html>
